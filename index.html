@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1日の水分摂取量計算ツール【無料】簡単・無料計算</title>
+    <meta name="description" content="体重・運動量・気温から1日に必要な水分摂取量を計算。脱水防止アドバイス付き。登録不要・完全無料でご利用いただけます。">
+    <link rel="canonical" href="https://appadaycreator.github.io/water-intake-calculator/">
+    <meta property="og:title" content="1日の水分摂取量計算ツール【無料】簡単・無料計算">
+    <meta property="og:description" content="体重・運動量・気温から1日に必要な水分摂取量を計算。脱水防止アドバイス付き。登録不要・完全無料でご利用いただけます。">
+    <meta property="og:url" content="https://appadaycreator.github.io/water-intake-calculator/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ja_JP">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💧</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
+    <link rel="dns-prefetch" href="https://www.clarity.ms">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    <!-- GTM -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-TXQGZRF9');</script>
+    <!-- Clarity -->
+    <script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,"clarity","script","s3t9vl8h3v");</script>
+    <!-- AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8427583028015858" crossorigin="anonymous"></script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"1日の水分摂取量計算ツール","description":"体重・運動量・気温から1日に必要な水分摂取量を計算。脱水防止アドバイス付き。登録不要・完全無料でご利用いただけます。","url":"https://appadaycreator.github.io/water-intake-calculator/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"JPY"}}</script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', 'Noto Sans JP', sans-serif; background: linear-gradient(135deg, #FFEDD5 0%, #FFF7ED 100%); min-height: 100vh; color: #333; line-height: 1.6; }
+        .site-header { background: #EA580C; color: white; padding: 32px 20px; text-align: center; }
+        .site-header .emoji { font-size: 52px; margin-bottom: 8px; }
+        .site-header h1 { font-size: 24px; font-weight: 700; margin-bottom: 8px; }
+        .site-header p { font-size: 14px; opacity: 0.9; }
+        .container { max-width: 800px; margin: 0 auto; padding: 16px; }
+        .card { background: white; border-radius: 16px; padding: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); margin-bottom: 16px; }
+        .btn { background: #EA580C; color: white; border: none; padding: 14px 24px; border-radius: 10px; font-size: 16px; font-weight: 600; cursor: pointer; width: 100%; transition: opacity .2s; }
+        .btn:hover { opacity: 0.9; }
+        .btn:active { transform: scale(0.98); }
+        input, select, textarea { width: 100%; padding: 10px 14px; border: 1.5px solid #e2e8f0; border-radius: 8px; font-size: 15px; margin-top: 4px; font-family: inherit; }
+        input:focus, select:focus { outline: none; border-color: #EA580C; }
+        label { font-size: 13px; font-weight: 600; color: #555; display: block; margin-top: 14px; margin-bottom: 2px; }
+        .result { display: none; }
+        .result.show { display: block; }
+        .result-value { font-size: 36px; font-weight: 700; color: #EA580C; text-align: center; padding: 16px 0; }
+        .badge { display: inline-block; background: #EA580C20; color: #EA580C; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; }
+        /* ── サービス固有CSS ── */
+
+    </style>
+</head>
+<body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TXQGZRF9" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <header class="site-header">
+        <div class="emoji">💧</div>
+        <h1>1日の水分摂取量計算ツール</h1>
+        <p>体重・運動量・気温から1日に必要な水分摂取量を計算。脱水防止アドバイス付き。</p>
+    </header>
+
+    <main class="container">
+        <ins class="adsbygoogle" style="display:block;margin:12px 0" data-ad-client="ca-pub-8427583028015858" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+        <div class="card">
+          <h2 style="font-size:18px;font-weight:700;margin-bottom:16px;">💧 1日の水分摂取量計算ツール</h2>
+          <label>体重（kg）</label>
+          <input type="number" id="val1" placeholder="例: 60" min="20" max="200" style="width:100%;padding:10px;border:1px solid #ddd;border-radius:8px;margin-bottom:12px;box-sizing:border-box;">
+          <label>運動量</label>
+          <select id="val2" style="width:100%;padding:10px;border:1px solid #ddd;border-radius:8px;margin-bottom:12px;">
+            <option value="0">ほぼ運動しない（デスクワーク中心）</option>
+            <option value="1">軽い運動（週1〜2回ウォーキング等）</option>
+            <option value="2">適度な運動（週3〜4回）</option>
+            <option value="3">激しい運動（毎日・スポーツ選手）</option>
+          </select>
+          <label>今日の気温（℃）</label>
+          <input type="number" id="val3" placeholder="例: 28" min="-10" max="45" style="width:100%;padding:10px;border:1px solid #ddd;border-radius:8px;margin-bottom:4px;box-sizing:border-box;">
+          <button class="btn" style="margin-top:20px;" onclick="calculate()">計算する</button>
+          <div class="result" id="result" style="margin-top:16px;">
+            <div class="card" style="text-align:center;">
+              <div id="output" style="font-size:2.2rem;font-weight:700;color:#EA580C;padding:12px 0;"></div>
+              <p id="detail" style="color:#666;font-size:14px;margin-top:4px;"></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 関連サービス -->
+        <div class="card" style="margin-top:8px;">
+            <h3 style="font-size:13px;font-weight:600;color:#888;margin-bottom:10px;">🔗 関連サービス</h3>
+            <div style="display:flex;flex-direction:column;gap:6px;">
+                <a href="https://appadaycreator.github.io/calorie-calculator/" style="color:#6366f1;font-size:13px;text-decoration:none;padding:6px 0;border-bottom:1px solid #f1f5f9;">カロリー計算機 →</a>
+                <a href="https://appadaycreator.github.io/bmi-body-tracker/" style="color:#6366f1;font-size:13px;text-decoration:none;padding:6px 0;border-bottom:1px solid #f1f5f9;">Bmi Body Tracker →</a>
+                <a href="https://appadaycreator.github.io/diet-method-advisor/" style="color:#6366f1;font-size:13px;text-decoration:none;padding:6px 0;border-bottom:1px solid #f1f5f9;">🥗 ダイエット方法診断 →</a>
+            </div>
+        </div>
+
+        <ins class="adsbygoogle" style="display:block;margin:12px 0" data-ad-client="ca-pub-8427583028015858" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </main>
+
+    <footer style="text-align:center;padding:20px;color:white;font-size:12px;opacity:0.75;margin-top:8px;">
+        <p><a href="https://appadaycreator.github.io/" style="color:white;">AppADayCreator</a>
+        | <a href="privacy-policy.html" style="color:white;">プライバシーポリシー</a>
+        | <a href="terms.html" style="color:white;">利用規約</a>
+        | <a href="contact.html" style="color:white;">お問い合わせ</a></p>
+        <p style="margin-top:6px;">© 2025 AppADayCreator. All services are free.</p>
+    </footer>
+
+    <script>
+    // ★ここだけ実装（約10行）★
+    const CFG = {
+      inputs: ['val1','val3'],
+      error: '体重を入力してください',
+    };
+    function calcLogic(vals) {
+      const weight = vals[0];
+      const exercise = parseInt(document.getElementById('val2').value) || 0;
+      const temp = parseFloat(document.getElementById('val3').value) || 20;
+      if (weight <= 0) return {result: '---', detail: '体重を正しく入力してください'};
+      // 基本量: 体重(kg) × 35ml
+      let base = weight * 35;
+      // 運動補正: 0=0, 1=+300, 2=+600, 3=+1000 ml
+      const exerciseBonus = [0, 300, 600, 1000][exercise];
+      // 気温補正: 28度超えたら+50ml/度
+      const tempBonus = temp > 28 ? (temp - 28) * 50 : 0;
+      const total = Math.round((base + exerciseBonus + tempBonus) / 100) * 100;
+      const cups = Math.round(total / 200);
+      let advice = '適切な水分補給を心がけましょう。';
+      if (total >= 3000) advice = '⚠️ 発汗量が多い日です。スポーツドリンクも活用しましょう。';
+      else if (temp >= 30) advice = '🌡️ 暑い日は特に小まめな水分補給が大切です。';
+      else if (exercise >= 2) advice = '🏃 運動後は素早く補給を。水+塩分補給も意識して。';
+      const detail = `コップ${cups}杯（200ml換算）が目安 ／ ${advice}`;
+      const resultText = (total / 1000).toFixed(1) + ' L';
+      return {result: resultText, detail};
+    }
+    // ★以下変更不要★
+    document.addEventListener('DOMContentLoaded',()=>{
+      CFG.inputs.forEach(id=>{ const el=document.getElementById(id); if(el) el.addEventListener('keydown',e=>{ if(e.key==='Enter') calculate(); }); });
+    });
+    function calculate(){
+      const vals=CFG.inputs.map(id=>parseFloat(document.getElementById(id)?.value)||0);
+      if(!vals[0]){ alert(CFG.error); return; }
+      const {result,detail}=calcLogic(vals);
+      document.getElementById('output').textContent=typeof result==='number'?result.toLocaleString():result;
+      const d=document.getElementById('detail'); if(d) d.textContent=detail||'';
+      document.getElementById('result').classList.add('show');
+    }
+    </script>
+</body>
+</html>
