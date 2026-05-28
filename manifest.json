@@ -3,7 +3,7 @@
   "short_name": "water-intake",
   "start_url": "/water-intake-calculator/",
   "display": "standalone",
-  "background_color": "#6366f1",
+  "background_color": "#ffffff",
   "theme_color": "#7c3aed",
   "scope": "/water-intake-calculator/"
 }
